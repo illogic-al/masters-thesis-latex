@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Orville Bennett Master's Thesis.aux
+The style file: acmtrans.bst
+A level-1 auxiliary file: Chapters/intro.aux
+A level-1 auxiliary file: Chapters/methods.aux
+A level-1 auxiliary file: Chapters/results.aux
+A level-1 auxiliary file: Chapters/discussion.aux
+Database file #1: library.bib
+You've used 52 entries,
+            2969 wiz_defined-function locations,
+            1092 strings with 18614 characters,
+and the built_in function-call counts, 48310 in all, are:
+= -- 3541
+> -- 4881
+< -- 2
++ -- 1551
+- -- 1615
+* -- 5586
+:= -- 8900
+add.period$ -- 212
+call.type$ -- 52
+change.case$ -- 510
+chr.to.int$ -- 52
+cite$ -- 52
+duplicate$ -- 944
+empty$ -- 2250
+format.name$ -- 1791
+if$ -- 8718
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 55
+newline$ -- 263
+num.names$ -- 522
+pop$ -- 364
+preamble$ -- 1
+purify$ -- 825
+quote$ -- 0
+skip$ -- 941
+stack$ -- 0
+substring$ -- 2195
+swap$ -- 313
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1010
+warning$ -- 0
+while$ -- 474
+width$ -- 0
+write$ -- 687

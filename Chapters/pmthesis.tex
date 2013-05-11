@@ -1,0 +1,44 @@
+\chapter{Mateti's {\LaTeX} Thesis Example}
+
+Download link: \url{http://www.cs.wright.edu/~pmateti/GradStudents/thesisExample.tbz}
+I recommend that you use my collection of thesis files that you can
+download from here.  My own contribution here is not original.  It is
+in pulling together various needed pices in trying to reduce the
+LaTeX-learning time for my students.
+
+\section{Contents of the {\tt tar} File}
+
+The downloaded file is a tar archive compressed with bzip2.  You can
+untar it as in
+
+{\tt tar xvfj thesis.tbz}
+
+Your current directory will then have a new subdirectory called
+Thesis/ with the following files and subdirectories in it.
+
+\begin{verbatim}
+% ls -l Thesis
+total 36
+drwxr-xr-x    2 pmateti  pmateti      4096 May 24 13:07 Chapters/
+drwxr-xr-x    2 pmateti  pmateti      4096 May 24 11:44 Figures/
+drwxr-xr-x    2 pmateti  pmateti      4096 May 24 11:44 LaTeX/
+-rw-r--r--    1 pmateti  pmateti       713 May 24 11:47 Makefile
+drwxr-xr-x    2 pmateti  pmateti      4096 May 24 13:09 Tables/
+-rw-r--r--    1 pmateti  pmateti      8513 May 24 11:44 thesis.bib
+-rw-r--r--    1 pmateti  pmateti      1158 May 24 11:47 thesis.tex
+drwxr-xr-x    2 pmateti  pmateti      4096 May 24 11:44 WSU/
+
+\end{verbatim}
+
+\section{Your Use of these Files}
+
+The files in the directory LaTeX are to be left as they are; edit
+these only if you are fluent in LaTeX.  Edit the files in the WSU
+directory to insert your own name etc.  Replace all the files in the
+{\tt Chapters/ Figures/ Tables/} directories with yours.  Edit the
+thesis.tex to input the files in the {\tt Chapters/ Figures/ Tables/}
+directories.
+
+Use the given Makefile as a template and adjust.
+
+% -eof-

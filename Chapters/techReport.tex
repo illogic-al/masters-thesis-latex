@@ -1,0 +1,64 @@
+\chapter{Technical Report Writing}
+
+A thesis is a technical report.  Read and follow a good style book
+(e.g., Chicago) on technical report writing.  It is a good exercise to
+mark {\em this} article up!  Additionally, every university has
+guidelines regarding layouts and required pages such as a title page
+an approval page.
+
+(This article is itself poorly and hastily written.  Think of it as a
+collection of notes.  ``Do as I say, not as I do! {\tt ;-)}'' )
+
+
+\section{Structure}
+
+When you are moving from one depth to a deeper one there is always an
+introductory paragraph.  E.g., going from a chapter heading to its
+first section, and from a section heading to its first subsection.
+
+Sometimes we like to write a paragraph at the end of a
+chapter that does not belong to the last section.  This is often done
+by introducing a vertical white space after the end of the last
+section that is longer than the typicial spacing between consecutive
+sections.
+
+There are no particular size requirements.  But, a one page chapter
+and a two line section do look silly.
+
+\section{URLs}
+
+URLs are now common in CS theses.  Older style guides do not cover these.
+Include a URL inside \verb|\url{}|. Example:
+\url{http://www.google.com/search?q=latex+eepic+pstricks+tikz}
+\section{Acronyms}
+
+Acronyms are written in all-upper case.  Examples: GNU, BCPL, KDE.
+
+Linux, Unix, Pascal, Ada, Java, ... are not acronyms.  LINUX -> Linux,
+no boldface, L in caps, the rest in lower case.
+
+\section{References}
+
+
+The file named {\tt thesis.bib} should contain the references you collected
+in the {BibTeX} syntax.  I have included a few references to
+illustrate this syntax; you can leave them in this file.  In general,
+it can contain many more references than what you cite in the body of
+your thesis.  The {\tt bibtex} program examines the actual citations made,
+and pulls together the cited references into the text file named
+{\tt thesis.bbl}.
+
+
+Bibliographic citations are done in many ways.  I require my students to
+use the {\tt acmtrans.bst} style.  Other acceptable choices are those
+that include author(s) last name and year of publication in the body
+of the text that cites, and the end of the article list of references
+are sorted alphabetically by the first author's last name.  Styles
+that produce a bracketed number, as in [5], are not acceptable to me.
+
+When using \url{http://scholar.google.com/}, set Bibliography Manager
+to use BibTeX in the preferences.  Then, the references found
+can be saved in BiBTeX{} format.  Visit also
+\url{http://www.bibsonomy.org/}.
+
+% -eof-

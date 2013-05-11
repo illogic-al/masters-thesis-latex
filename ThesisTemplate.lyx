@@ -1,0 +1,3089 @@
+#LyX file created by tex2lyx 1.5.5
+\lyxformat 247
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+
+\usepackage{WSU}
+
+
+%-----------------------------------------------------------------------
+% Latex Thesis Template for Wright State University
+% Written by Sean A. Mortara
+% 28 June 2001
+%-----------------------------------------------------------------------
+%
+%  Modified fields
+%-----------------------------------------------------------------------
+\newcommand{\authorfirst}{Sean}
+\newcommand{\authorMI}{A.~}
+\newcommand{\authorlast}{Mortara}
+\newcommand{\degreefull}{Master of Science}
+\newcommand{\degreeshort}{M.S.}
+\newcommand{\dept}{Department of Mechanical and Materials Engineering}
+\newcommand{\institution}{Wright State University}
+\newcommand{\thesistitle}{Computational Methods in Aeroelasticity and a bunch of other stuff} % 
+%No spaces should be before or after this title.
+\newcommand{\pdfsubject}{     Aeroelasticity                           }
+\newcommand{\pdfkeywords}{    Aeroelasticity, CFD, flutter, LCO        }
+\newcommand{\yearcomplete}{   2001}
+%-----------------------------------------------------------------------
+%  Thesis Advisor, Department Chair, Dean of Graduate Studies
+%-----------------------------------------------------------------------
+\newcommand{\thesisdirector}{Advisor's Name}
+\newcommand{\thesisdirectortitle}{Ph.D. (or as appropriate)}
+\newcommand{\deptchair}{Chair's Name}
+\newcommand{\deptchairtitle}{Ph.D. (or as appropriate)}
+\newcommand{\dean}{Joseph F.~Thomas, Jr.~(or other Dean of Graduate School)}
+\newcommand{\deantitle}{Ph.D. (or as appropriate)}
+%-----------------------------------------------------------------------
+%  Final Examination Committee
+%-----------------------------------------------------------------------
+\newcommand{\fecone}{                    Committee member 1            }
+
+\newcommand{\fectwo}{                    Committee member 2            }
+
+\newcommand{\fecthree}{                  Committee member 3            }
+
+%Uncomment for fourth committee member as needed. Also uncomment in WSU.sty file. 
+%\newcommand{\fecfour}{                  Committee member 3            }
+
+% For more then 4 committee members, edit WSU.sty to insert fifth or so on. Sorry.
+
+
+% Modify this if needed for getting citations to "look right" according to your field. Read the natbib documentation on how to use this. 
+%\usepackage{natbib}
+%\usepackage[numbers,super]{natbib}
+%\usepackage{doublespace}
+
+%-----------------------------------------------------------------------
+%  Begin document!
+%-----------------------------------------------------------------------
+
+\end_preamble
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize 12
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%Don't touch
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+normalem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+pagestyle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+plain
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+rhead
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+doublespace
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%still don't touch.   
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  approval sheet
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\renewcommand{\baselinestretch}{2}
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+begin{singlespace}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+signaturepage
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+end{singlespace}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  Abstract
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\newpage
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+setcounter{page}{3}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 2in
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+begin{singlespace}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+ABSTRACT 
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+
+\size small
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+authorlast
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+authorfirst
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+M.S., 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+dept
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+institution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+yearcomplete
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+. 
+\shape slanted
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+thesistitle
+\end_layout
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+.
+\size default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+end{singlespace}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 0.5in*
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+renewcommand
+\backslash
+baselinestretch{2}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% This is where you can touch
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+This is where the abstract goes
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  List of symbols, etc. 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\newpage
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+renewcommand
+\backslash
+baselinestretch{1.5}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+begin{singlespace}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+
+\series bold
+
+\size giant
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+List of Symbols
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+
+
+\size large
+Chapter 3
+\size default
+ 
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="2">
+<features>
+<column alignment="none" valignment="top" width="0.75in">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $h$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Plate thickness
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Plate length
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+
+
+\size large
+Chapter 4
+\size default
+ 
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="2">
+<features>
+<column alignment="none" valignment="top" width="0.75in">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $M_{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Freestream Mach number
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $U_{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Freestream fluid velocity
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $p-p_\infty$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Aerodynamic pressure differential
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+
+
+\size large
+Chapter 5
+\size default
+ 
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="2">
+<features>
+<column alignment="none" valignment="top" width="0.75in">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $t^*$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Time, Nondimensional time
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $w$
+\end_inset
+
+, 
+\begin_inset Formula $W$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Plate deflection, Non-dimensionalized deflection 
+\begin_inset Formula $W=w/h$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $\xi$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Cartesian coordinate, Nondimensionalized coordinate 
+\begin_inset Formula $\xi=x/L$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%%%%%
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+
+
+\size large
+Chapter 7
+\size default
+ 
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="2" columns="2">
+<features>
+<column alignment="none" valignment="top" width="0.75in">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $\beta$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $\sqrt{M_{\infty}^2-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset Formula $\lambda$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Nondimensional freestream dynamic pressure
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+end{singlespace}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  Table of contents, etc.
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+renewcommand
+\backslash
+baselinestretch{1.5}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+begin{singlespace}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset LatexCommand \tableofcontents
+
+\end_inset
+
+
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\begin_inset FloatList table
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+end{singlespace}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  Acknowledgements and dedication
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\newpage
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+setlength{
+\backslash
+parindent}{0em}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+
+\size huge
+Acknowledgement
+\size default
+ 
+\end_layout
+
+\begin_layout Standard
+
+I would like to extend my thanks to yada yada yada (maybe your parents?)
+\end_layout
+
+\begin_layout Standard
+
+More thankful yada...
+\end_layout
+
+\begin_layout Standard
+
+Even more yada...
+\end_layout
+
+\begin_layout Standard
+
+
+\newpage
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 3in*
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+Dedicated to
+\newline
+ Somebody Special (Wife or husband works well here) 
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  Begin Chapters!
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\newpage
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+setlength{
+\backslash
+parindent}{2em}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% This starts the use of double space. For usage, see the setspace package. 
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+renewcommand
+\backslash
+baselinestretch{4}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+setlength{
+\backslash
+skip}{4.0ex plus 0.5ex minus 0.5ex}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+In The Beginning (name of chapter 1)
+\end_layout
+
+\begin_layout Standard
+
+The date of this document generation (current version of this document) is the date of the thesis on page two (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+).
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{}
+\end_layout
+
+\end_inset
+
+ sdafsd sadfsdaf asdfadf. OK, I have nothing to say here, but you should in your thesis. Introduce your chapter in a page or so. 
+\end_layout
+
+\begin_layout Section
+
+
+\begin_inset OptArg
+status collapsed
+
+
+\begin_layout Standard
+
+Citations/References (short form of section name)
+\end_layout
+
+\end_inset
+
+Citations, using them, referring to them, formatting them, and loving using them because if you don't use them when appropriate it's called 
+\emph on
+plagiarism
+\emph default
+, and references
+\end_layout
+
+\begin_layout Standard
+
+That was a ridiculously long section name to illustrate how to get a shorter version in your table of contents.
+\end_layout
+
+\begin_layout Standard
+
+See section 
+\begin_inset LatexCommand \ref{sec:blahblah}
+
+\end_inset
+
+. I'm not the only one who says this is awesome stuff
+\begin_inset LatexCommand \cite{Mortara2004}
+
+\end_inset
+
+! This citation is in the ASME format (for which I've included a bst file. See 
+\shape smallcaps
+asmems4
+\shape default
+ in the source document(way near the end). Some other options are: 
+\end_layout
+
+\begin_layout Itemize
+
+natbib: put 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+usepackage{natbib}'
+\end_layout
+
+\end_inset
+
+ in the header (before 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+begin{document}'
+\end_layout
+
+\end_inset
+
+), and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+bibliographystyle{plainnat}'
+\end_layout
+
+\end_inset
+
+ just before 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+bibliography'
+\end_layout
+
+\end_inset
+
+). See the natbib documentation for details. 
+\end_layout
+
+\begin_layout Itemize
+
+AIAA: put 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+usepackage{overcite}'
+\end_layout
+
+\end_inset
+
+ in the header (before 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+begin{document}'
+\end_layout
+
+\end_inset
+
+), and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+bibliographystyle{aiaa}'
+\end_layout
+
+\end_inset
+
+ just before 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+bibliography'
+\end_layout
+
+\end_inset
+
+). Use 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+citen{sdfsdf}'
+\end_layout
+
+\end_inset
+
+ for in-line citations. Read the overcite package documentation for more. 
+\end_layout
+
+\begin_layout Standard
+
+A variety of other formats are available on 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+href{http://www.ctan.org}{
+\end_layout
+
+\end_inset
+
+ctan
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ or though an internet search. You may also just pick one using 
+\begin_inset Quotes erd
+\end_inset
+
+natbib
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+Don't those quotes look bad before 
+\begin_inset Quotes eld
+\end_inset
+
+natbib
+\begin_inset Quotes erd
+\end_inset
+
+? Well, use two left quotes in LaTeX
+\begin_inset InsetSpace \space{}
+to get it to look right.
+\end_layout
+
+\end_inset
+
+ The formatting of your references is controlled by the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'bibliographystyle'
+\end_layout
+
+\end_inset
+
+ command near the end of the document. Use the bibliography style appropriate to your field. On exists, out there. I'm sure. If not (ok, it happened to me 10 years ago), you can use the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'makebst'
+\end_layout
+
+\end_inset
+
+ script to make your own. Answer a bunch of questions and it makes a style file for you. If you are using a numerical citation system, you may want to use 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'
+\backslash
+usepackage{cite}'
+\end_layout
+
+\end_inset
+
+. It creates a condensed numerical list of citations, but can cause conflicts with the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+verb'hyperref'
+\end_layout
+
+\end_inset
+
+ package (you may need to decide\SpecialChar \ldots{}
+ sorry, this is a bug that drives me nuts too.)
+\end_layout
+
+\begin_layout Subsection
+
+Equations
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset LatexCommand \label{sec:equations}
+
+\end_inset
+
+ 
+\begin_inset Formula \begin{equation}\label{eq:alphaoverbeta} x=\frac{\alpha}{\beta}
+\end{equation}
+\end_inset
+
+ Really bad idea: don't start a section with an equation. Don't start a sentence with a variable either. Start with a word. The variable 
+\begin_inset Formula $x$
+\end_inset
+
+ is the distance. How hard was that?
+\end_layout
+
+\begin_layout Standard
+
+Sometimes you don't want an equation number. 
+\begin_inset Formula \begin{displaymath}
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{displaymath}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+So, why is this a subsection? Well, I needed to show you a subsection. It make no logical sense, though.
+\end_layout
+
+\begin_layout Standard
+
+We don't number equations in LaTeX. LaTeX
+\begin_inset InsetSpace \space{}
+does it for us. Label them with names (see the raw LaTeX
+\begin_inset InsetSpace \space{}
+file). Don't do like George Foreman (all his 5 sons are named George\SpecialChar \ldots{}
+\SpecialChar \ldots{}
+ I'm sure that works well when mail shows up.). Just don't put a space in the middle of a variable name.
+\end_layout
+
+\begin_layout Standard
+
+I started a new paragraph with a blank line. I'm going to the next page to illustrate a point. 
+\newpage
+ Now if I have an equation that I want to be between paragraphs, unlike equation (
+\begin_inset LatexCommand \ref{eq:alphaoverbeta}
+
+\end_inset
+
+), I put a blank line after the equation. 
+\begin_inset Formula \begin{equation}
+  \label{eq:anothersillyequation}
+  x\neq y
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+See indent? But if I'm continuing the paragraph, don't put that blank line in 
+\begin_inset Formula \begin{equation}
+  \label{eq:anothersillyequation}
+  x\neq y
+\end{equation}
+\end_inset
+
+ See, no indent? 
+\end_layout
+
+\begin_layout Section
+
+Figures
+\end_layout
+
+\begin_layout Standard
+
+This is not the same as section 
+\begin_inset LatexCommand \ref{sec:equations}
+
+\end_inset
+
+ on equations. However, if I move that section, I'll still be referring to the right section. Better explained by Figure
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+a) Don't use footnotes. b) Capitalize the word 
+\begin_inset Quotes eld
+\end_inset
+
+Figure
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset LatexCommand \ref{fig:example}
+
+\end_inset
+
+. 
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  figure placement: here, top, bottom, or page
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename example.eps
+	width 4in
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Caption
+
+Example caption.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset LatexCommand \label{fig:example}
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%  figure placement: here, top, bottom, or page
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename example.eps
+	width 4in
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Caption
+
+
+\begin_inset OptArg
+status collapsed
+
+
+\begin_layout Standard
+
+Short Caption
+\end_layout
+
+\end_inset
+
+Example caption that is way too long for the list of figures, is a run on sentence, has no purpose being this long, except to show you how to avoid such a crazy long entry in your list of figures.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset LatexCommand \label{fig:example2}
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+Don't ask me why the label command has to come late in a figure. It does. Remember, color won't print well in black and white. Use dashes and dash-dots, etc, for hard copies. I'll document a trick for this later. Basically, make two graphics directories, one for color, one for black and white. Then, use the 
+\family sans
+graphicspath
+\family default
+ command to choose the one you want. You can Google this for now. 
+\end_layout
+
+\begin_layout Section
+
+asdfeerv
+\end_layout
+
+\begin_layout Standard
+
+dsevewve werbtwb rwhyrtnyyn. Do you have something worth saying? 
+\end_layout
+
+\begin_layout Subsection
+
+wqeve
+\end_layout
+
+\begin_layout Standard
+
+qeerq erg rth teyj urt. Just more sections\SpecialChar \ldots{}
+
+\end_layout
+
+\begin_layout Chapter
+
+
+\begin_inset OptArg
+status collapsed
+
+
+\begin_layout Standard
+
+Short Version of Another Chapter Name
+\end_layout
+
+\end_inset
+
+Another Chapter\SpecialChar \ldots{}
+ you should have 5 or more
+\end_layout
+
+\begin_layout Standard
+
+rktjnr rto;ghrt rwtirt. 
+\end_layout
+
+\begin_layout Section
+
+ewgejn
+\end_layout
+
+\begin_layout Standard
+
+Automatic section numbering. If you move a section, the numbers will correct after you LaTeX
+\begin_inset InsetSpace \space{}
+the document twice (cross references need section numbers to be corrected first). 
+\end_layout
+
+\begin_layout Subsection
+
+ewgujenb
+\end_layout
+
+\begin_layout Standard
+
+qervij ergv'i ergoin efv. 
+\end_layout
+
+\begin_layout Section
+
+qweve
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset LatexCommand \label{sec:blahblah}
+
+\end_inset
+
+ qevef efv thn tujtye eqr?
+\end_layout
+
+\begin_layout Standard
+
+You can include chapters using the include command. See the LaTeX
+\begin_inset InsetSpace \space{}
+file. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{chapter1}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% ------------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{chapter2}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% ------------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{chapter3}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% ------------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{chapter4}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% ------------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{chapter5}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% ------------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{chapter6}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% ------------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{chapter7}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% ------------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{chapter8}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+% ------------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\baselinestretch}{1.5}
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\end_layout
+
+\end_inset
+
+Bibliography
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+Usually no text here. There are two lines in this section in your LaTeX
+\begin_inset InsetSpace \space{}
+file. The firs tis a bibligraphystyle command (se the 
+\family sans
+tex
+\family default
+ file. Don't move it elsewhere. It won't work out well for you. Ask Chris Allen.
+\end_layout
+
+\begin_layout Standard
+
+You need to choose a style file that formats references the way you want them formatted. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+bibliographystyle{plainnat}% You should chose one for your major. Look for bst styles on ctan, or use makebst.sty. This formats the bibliography
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+bibliographystyle{asmems4}
+\end_layout
+
+\end_inset
+
+ The second line is the bibliography command. It just tells LaTeX
+\begin_inset InsetSpace \space{}
+the name of your 
+\family sans
+.bib
+\family default
+ file. This is a database of your references. 
+\begin_inset LatexCommand \bibtex[asmems4]{main}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%dummy comment inserted by tex2lyx to ensure that this paragraph is not empty
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+First appendix chapter
+\end_layout
+
+\begin_layout Standard
+
+Oh, there can be an appendix. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{appendixA}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{appendixB}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{appendixC}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%
+\backslash
+include{appendixD}
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+%-----------------------------------------------------------------------
+\end_layout
+
+\begin_layout Standard
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,349 @@
+\documentclass[12pt]{report}
+\usepackage{WSU}
+
+%-----------------------------------------------------------------------
+% Latex Thesis Template for Wright State University
+% Written by Sean A. Mortara
+% 28 June 2001
+%-----------------------------------------------------------------------
+%
+%  Modified fields
+%-----------------------------------------------------------------------
+\newcommand{\authorfirst}{Orville}
+\newcommand{\authorMI}{R.~}
+\newcommand{\authorlast}{Bennett}
+\newcommand{\degreefull}{Master of Science}
+\newcommand{\degreeshort}{M.S.}
+\newcommand{\dept}{Department of Neuroscience, Cell Biology and Physiology}
+\newcommand{\institution}{Wright State University}
+\newcommand{\thesistitle}{Expressing human Orai3 in insect cells for pharmacological studies}  % 
+%No spaces should be before or after this title.
+\newcommand{\pdfsubject}{     Store Operated Calcium Entry                }
+\newcommand{\pdfkeywords}{    SOCE, Ca2+ entry, Calcium entry        }
+\newcommand{\yearcomplete}{   2012}
+%-----------------------------------------------------------------------
+%  Thesis Advisor, Department Chair, Dean of Graduate Studies
+%-----------------------------------------------------------------------
+\newcommand{\thesisdirector}{J. Ashot Kozak}
+\newcommand{\thesisdirectortitle}{Ph.D.}
+\newcommand{\deptchair}{Timothy Cope}
+\newcommand{\deptchairtitle}{Ph.D.}
+\newcommand{\dean}{Andrew Hsu}
+\newcommand{\deantitle}{Ph.D.}
+%-----------------------------------------------------------------------
+%  Final Examination Committee
+%-----------------------------------------------------------------------
+\newcommand{\fecone}{                    J. Ashot Kozak, Ph. D.            }
+
+\newcommand{\fectwo}{                  Thomas Brown, Ph. D.            }
+
+\newcommand{\fecthree}{                    Adrian Corbett, Ph. D.           }
+
+%Uncomment for fourth committee member as needed. Also uncomment in WSU.sty file. 
+\newcommand{\fecfour}{                  Robert Putnam, Ph. D.             }
+
+% For more then 4 committee members, edit WSU.sty to insert fifth or so on. Sorry.
+
+
+% Modify this if needed for getting citations to "look right" according to your field. Read the natbib documentation on how to use this. 
+\usepackage{natbib}
+%\usepackage[numbers,super]{natbib}
+%\usepackage{utf8} % for utf-8 input
+\usepackage{amsmath} % nice math symbols
+%\usepackage{amssymb} % more math symbols
+\usepackage{bm} % bold math
+%\usepackage[usenames,dvipsnames]{color} % change text color
+\usepackage[table,usenames,dvipsnames]{xcolor} % for adding color to table rows
+\usepackage{multirow} % provides multiple row spanning table entries 
+\usepackage{tikz}
+\usepackage[colorinlistoftodos,textwidth=3cm]{todonotes} % for easy TODO creation
+\reversemarginpar % use left margin
+\setlength{\marginparwidth}{3cm} % use for todonotes margins
+\usepackage{syntonly} % syntonly package: checks syntax only when next line is uncommented
+%\syntaxonly
+%\usepackage{epstopdf} % to convert EPS images to PDFs for use as figures
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.eps,.jpg}
+
+\usepackage[labelfont=bf]{caption} % Bold caption label
+
+\usepackage{lpic}
+\usetikzlibrary{decorations.pathmorphing} % for snake lines
+\usetikzlibrary{matrix} % for block alignment
+\usetikzlibrary{arrows} % for arrow heads
+\usetikzlibrary{calc} % for manipulation of coordinates
+
+\usepackage{paralist} % for in-paragraph lists
+\usepackage{textcomp} % use for \textcelsius{}
+\usepackage{subfig} 	% gives the author the ability to have subfigures within figures, or subtables within table floats.
+
+%\usepackage{doublespace}
+%\usepackage{setspace} % for control of spacing
+
+% LaTeX macros specific to this thesis.
+\newcommand\Ca{Ca$^{2+}$}
+\newcommand\Mg{Mg$^{2+}$}
+\newcommand\Na{Na$^{+}$}
+\newcommand\K{K$^{+}$}
+\newcommand\cai{\textbf{[}Ca$^{2+}$\textbf{]}$_i$}
+\newcommand\SOCE{SOCE{}}
+\newcommand\Stim{Stim1{}}
+\newcommand\stim{STIM1}
+\newcommand\droso{\emph{Drosophila}}
+\newcommand\dorai{\emph{dOrai}}
+\newcommand\dstim{\emph{dStim}}
+\newcommand\rnai{RNA$_i$}
+
+
+\newcommand\MgCl{MgCl$_2$}
+\newcommand\CaCl{CaCl$_2$}
+\newcommand\CuSO{CuSO$_4$\textperiodcentered5H$_2$O}
+\newcommand\cuso{CuSO$_4$}
+
+\newcommand\Pluronic{Pluronic\textsuperscript{\textregistered} F-127{~}}
+\newcommand\transit{\emph{Trans}IT\textsuperscript{\textregistered}-2020{~}}
+
+\newcommand\sali{\texttt{SalI}}
+\newcommand\xbai{\texttt{XbaI}}
+\newcommand\nrui{\texttt{NruI}}
+\newcommand\bamhi{\texttt{BamHI}}
+\newcommand\stui{\texttt{StuI}}
+\newcommand\xhoi{\texttt{XhoI}}
+\newcommand\apai{\texttt{ApaI}}
+\newcommand\kpni{\texttt{KpnI}}
+
+\newcommand\salisite{\texttt{\textbf{GTCGAC}}}
+\newcommand\xbaisite{\texttt{\textbf{TCTAGA}}}
+\newcommand\nruisite{\texttt{\textbf{TGCCGA}}}
+
+\newcommand\salprime{\ttfamily {TGCCGA\textcolor{red}{GTCGAC}}}
+\newcommand\xbaprime{\ttfamily {TGCCGA\textcolor{OliveGreen}{TCTAGA}}}
+
+\newcommand\oraiivector{{puc\-Hyg\-MT-Orai1}}
+\newcommand\oraiiiivector{{puc\-Hyg\-MT-Orai3}}
+\newcommand\stimivector{{puc\-Hyg\-MT-STIM1}}
+\newcommand\puchygmt{{puc\-HygroMT}}
+\newcommand\pucgfp{{puc18-act-gfp}}
+
+\newcommand\stimclonefwd{{\tt Stim1 start salI} {}}
+\newcommand\stimclonerev{{\tt Stim1 end xbaI} {}}
+\newcommand\oraioneclonefwd{{orai1\_start\_nruI\_salI} {}}
+\newcommand\oraioneclonerev{{orai1\_end\_nruI\_xbaI} {}}
+\newcommand\oraithreeclonefwd{{\tt Orai3 start salI} {}}
+\newcommand\oraithreeclonerev{{\tt Orai3 end xbaI} {}}
+
+\newcommand\oraionertfwd{{orai1\_rtpcr\_fwd} {}}
+\newcommand\oraionertrev{{orai1\_rtpcr\_rev} {}}
+\newcommand\oraithreertfwd{{orai3\_rtpcr\_fwd} {}}
+\newcommand\oraithreertrev{{orai3\_rtpcr\_rev} {}}
+\newcommand\stimrtfwd{{hstim1\_end\_fwd} {}}
+\newcommand\stimrtrev{{hstim1\_rev} {}}
+\newcommand\rpfwd{rp49-fwd {}}
+\newcommand\rprev{rp49-rev {}}
+\newcommand\hygbfwd{HygBP3 {}}
+\newcommand\hygbrev{HygBP4 {}}
+
+\newcommand\vectormcsstart{\texttt{GGGGAT\textcolor{purple}{CTCGAG}CTCGCGAAAGCTTGCATGCCTGCAG\textcolor{red}{GTCGAC}}}
+\newcommand\vectormcsend{\texttt{\textcolor{OliveGreen}{TCTAGA}\textcolor{pink}{GGATCC}\textcolor{orange}{GCGGCCGC}CCTCGACGGATCCAGACATGATAAGATACATT}\\}
+
+\newcommand\oraiiiiseq{{\tt ATGAAGGGCGGCGAGGGGGACGCGGGCGAGCAGGCCCCGCTGAACCCTGAGGGCGAGAGC\\
+CCTGCAGGCTCGGCCACGTACCGGGAGTTCGTGCACCGCGGCTACCTGGACCTCATGGGG\\
+GCCAGTCAGCACTCGCTGCGGGCGCTCAGCTGGCGCCGCCTCTACCTCAGCCGGGCCAAG\\
+CTCAAAGCTTCCAGCCGCACGTCTGCCTTGCTCTCGGGCTTCGCCATGGTGGCCATGGTG\\
+GAGGTGCAGCTGGAGAGTGACCACGAGTACCCACCAGGCCTGCTGGTGGCCTTCAGTGCC\\
+TGCACCACCGTGCTGGTGGCTGTGCACCTCTTTGCACTCATGGTCTCCACGTGTCTGCTG\\
+CCCCACATTGAAGCTGTGAGCAACATCCACAACCTCAACTCTGTCCACCAGTCGCCACAC\\
+CAGAGACTGCACCGCTACGTGGAGCTGGCCTGGGGCTTCTCCACTGCCCTGGGCACCTTT\\
+CTCTTCCTTGCTGAAGTTGTCCTGGTTGGTTGGGTCAAGTTTGTGCCCATTGGGGCTCCC\\
+TTGGACACACCGACCCCCATGGTGCCCACATCCCGGGTGCCCGGGACTCTGGCACCAGTG\\
+GCTACCTCCCTTAGTCCAGCTTCCAATCTCCCACGGTCCTCTGCGTCTGCAGCACCGTCC\\
+CAGGCTGAGCCAGCCTGCCCACCCCGGCAAGCCTGTGGTGGTGGTGGGGCCCATGGGCCA\\
+GGCTGGCAAGCAGCCATGGCCTCCACAGCCATCATGGTACCCGTGGGGCTCGTGTTTGTG\\
+GCCTTTGCCCTGCATTTCTACCGCTCCTTGGTGGCACACAAGACAGACCGCTACAAGCAG\\
+GAACTAGAGGAACTGAATCGCCTGCAGGGGGAGCTGCAGGCTGTGTGA}}
+
+\newcommand\stimiseq{{\tt ATGGATGTATGCGTCCGTCTTGCCCTGTGGCTC
+CTCTGGGGACTCCTCCTGCACCAGGGCCAGAGCCTCAGCCATAGTCACAGTGAGAAGGCGACAGGAACCAGCTCGGG
+GGCCAACTCTGAGGAGTCCACTGCAGCAGAGTTTTGCCGAATTGACAAGCCCCTGTGTCACAGTGAGGATGAGAAAC
+TCAGCTTCGAGGCAGTCCGTAACATCCACAAACTGATGGACGATGATGCCAATGGTGATGTGGATGTGGAAGAAAG
+TGATGAGTTCCTGAGGGAAGACCTCAATTACCATGACCCAACAGTGAAACACAGCACCTTCCATGGTGAGGATAAG
+CTCATCAGCGTGGAGGACCTGTGGAAGGCATGGAAGTCATCAGAAGTATACAATTGGACCGTGGATGAGGTGGTAC
+AGTGGCTGATCACATATGTGGAGCTGCCTCAGTATGAGGAGACCTTCCGGAAGCTGCAGCTCAGTGGCCATGCCAT
+GCCAAGGCTGGCTGTCACCAACACCACCATGACAGGGACTGTGCTGAAGATGACAGACCGGAGTCATCGGCAGAAG
+CTGCAGCTGAAGGCTCTGGATACAGTGCTCTTTGGGCCTCCTCTCTTGACTCGCCATAATCACCTCAAGGACTTCA
+TGCTGGTGGTGTCTATCGTTATTGGTGTGGGCGGCTGCTGGTTTGCCTATATCCAGAACCGTTACTCCAAGGAGCA
+CATGAAGAAGATGATGAAGGACTTGGAGGGGTTACACCGAGCTGAGCAGAGTCTGCATGACCTTCAGGAAAGGCTG
+CACAAGGCCCAGGAGGAGCACCGCACAGTGGAGGTGGAGAAGGTCCATCTGGAAAAGAAGCTGCGCGATGAGATCA
+ACCTTGCTAAGCAGGAAGCCCAGCGGCTGAAGGAGCTGCGGGAGGGTACTGAGAATGAGCGGAGCCGCCAAAAATA
+TGCTGAGGAGGAGTTGGAGCAGGTTCGGGAGGCCTTGAGGAAAGCAGAGAAGGAGCTAGAATCTCACAGCTCATGG
+TATGCTCCAGAGGCCCTTCAGAAGTGGCTGCAGCTGACACATGAGGTGGAGGTGCAATATTACAACATCAAGAAGC
+AAAATGCTGAGAAGCAGCTGCTGGTGGCCAAGGAGGGGGCTGAGAAGATAAAAAAGAAGAGAAACACACTCTTTGG
+CACCTTCCACGTGGCCCACAGCTCTTCCCTGGATGATGTAGATCATAAAATTCTAACAGCTAAGCAAGCACTGAGC
+GAGGTGACAGCAGCATTGCGGGAGCGCCTGCACCGCTGGCAACAGATCGAGATCCTCTGTGGCTTCCAGATTGTCA
+ACAACCCTGGCATCCACTCACTGGTGGCTGCCCTCAACATAGACCCCAGCTGGATGGGCAGTACACGCCCCAACCC
+TGCTCACTTCATCATGACTGACGACGTGGATGACATGGATGAGGAGATTGTGTCTCCCTTGTCCATGCAGTCCCCT
+AGCCTGCAGAGCAGTGTTCGGCAGCGCCTGACGGAGCCACAGCATGGCCTGGGATCTCAGAGGGATTTGACCCATT
+CCGATTCGGAGTCCTCCCTCCACATGAGTGACCGCCAGCGTGTGGCCCCCAAACCTCCTCAGATGAGCCGTGCTGC
+AGACGAGGCTCTCAATGCCATGACTTCCAATGGCAGCCACCGGCTGATCGAGGGGGTCCACCCAGGGTCTCTGGTG
+GAGAAACTGCCTGACAGCCCTGCCCTGGCCAAGAAGGCATTACTGGCGCTGAACCATGGGCTGGACAAGGCCCACA
+GCCTGATGGAGCTGAGCCCCTCAGCCCCACCTGGCGGCTCTCCACATTTGGATTCTTCCCGTTCTCACAGCCCCAG
+CTCCCCAGACCCAGACACACCATCTCCAGTTGGGGACAGCCGAGCCCTGCAAGCCAGCCGAAACACACGCATTCCC
+CACCTGGCTGGCAAGAAGGCTGTGGCTGAGGAGGATAATGGCTCTATTGGCGAGGAAACAGACTCCAGCCCAGGCC
+GGAAGAAGTTTCCCCTCAAAATCTTTAAGAAGCCTCTTAAGAAGTAGGC}}
+
+\hyphenation{puc-HygroMT}
+
+
+%-----------------------------------------------------------------------
+%  Begin document!
+%-----------------------------------------------------------------------
+\begin{document}
+%Don't touch
+
+\bibliographystyle{acmtrans}
+\citestyle{nature}
+\bibpunct{(}{)}{,}{n}{}{;}
+
+  \normalem
+  \pagenumbering{roman}
+  \pagestyle{plain}
+  \rhead{\today}
+ \maketitle
+\doublespace
+%still don't touch.   
+
+%-----
+%  approval sheet
+%-----
+
+\thispagestyle{empty}
+\renewcommand\baselinestretch{2}
+\begin{singlespace}
+\signaturepage
+\end{singlespace}
+%-----
+%  Abstract
+%-----
+\newpage
+\setcounter{page}{3}
+\vspace{2in}
+
+\begin{singlespace}
+\begin{center} ABSTRACT \end{center}
+\noindent{\small{\authorlast, \authorfirst}. 
+		 {M.S., \dept, \institution}, 
+		 {\yearcomplete}. 
+		 {\sl \thesistitle}.}
+\end{singlespace}
+\vspace*{.5in}
+%\renewcommand\baselinestretch{2}
+% This is where you can touch
+The Orai3 protein forms a \Ca{} channel with a pharmacological profile distinct from its close relative, the store-operated \Ca{} channel Orai1. Though closely related to Orai1, the function of Orai3 in humans is still unclear. This study attempts to contribute to the body of knowledge by undertaking a pharmacological analysis of Orai3 in insect cells. We describe here the creation of a vector capable of expressing the mammalian Orai3 gene on an insect background. We demonstrate the ability to induce gene expression of Orai3 in these insect cells, and then assess the effectiveness of this system by characterizing the pharmacological properties with the drug 2-aminoethoxydiphenyl borate (2-APB). The results show that the current strategy used to express Orai3 will require additional refinement before the system can be considered generally useful for pharmacological studies, because expression of Orai3 may be affected by native proteins. The interference of expression seems confined to Orai \Ca{} channels, as mammalian \stim{} was also expressed and a response to 2-APB, albeit unexpected, was observed.    
+
+%-----
+%  List of symbols, etc. 
+%-----
+%\newpage
+%\renewcommand\baselinestretch{1.5}
+%\begin{singlespace}\begin{center}
+%  \textbf{\Huge{List of Symbols}}
+%\end{center}
+
+%%%%%
+%\begin{flushleft}{\large Chapter 3} \end{flushleft}
+%\begin{tabular}{p{0.75in}l}
+%   $h$ & {Plate thickness}\\
+%   $L$ & {Plate length}\\
+%\end{tabular}
+
+%-----
+%  Table of contents, etc.
+%-----
+%\renewcommand\baselinestretch{1.5}
+
+\begin{singlespace}
+\tableofcontents
+\listoffigures
+\listoftables
+\end{singlespace}
+
+%-----
+%  Acknowledgements and dedication
+%-----
+\newpage
+\thispagestyle{plain}
+\setlength{\parindent}{0em}
+\begin{center}
+{\huge Acknowledgement}
+\end{center}
+
+I would like to extend my thanks to some of the individuals who made the completion of this thesis possible. I'll begin by first thanking God. Were it not for His constant guidance and support, I think I would have lost my mind during the past couple of months. So, thank you Lord for being there, when I refused to let anyone else.
+
+I would also like to thank my thesis director, J. Ashot Kozak, Ph.D., for not only the opportunity to work on this project, but also his tireless work revising, and revising, and revising, and revising this thesis. Were it not for his guidance, a lesser work would be presented before you today. 
+I'll also take this opportunity to thank my committee members, all of you have, in some small (or large) way, helped make the completion of this project a less stressful undertaking. I truly appreciate all you've done to help. I'd also like to thank Dan Halm, Ph. D., and his wife Susan who have not only allowed us to use equipment, but provided me and my wife with the most awesome blankets known to man. Hand-made no less.   
+
+Finally, I'd like to thank my magnificent wife Laura, for putting up with my insane demands for the past few months; requests like keeping five and less-than-one year olds quiet so that I'd be able to work at home when necessary. I appreciate all you've had to sacrifice this past year, and want you to know that without you, and your support, I'd never have made it this far. ``Thank you'' doesn't even come close to making up for it, so we'll just have to figure something else out. :-)
+
+\newpage
+\thispagestyle{plain}
+\vspace*{3in}
+\begin{center}
+  Dedicated to\\
+  my exceptionally magnificent wife, \\
+  Laura Bennett.
+\end{center}
+
+%-----
+%  Begin Chapters!
+%-----
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\setlength{\parindent}{2em}
+% This starts the use of double space. For usage, see the setspace package. 
+%\renewcommand\baselinestretch{4}
+
+%\setlength{\skip}{4.0ex plus 0.5ex minus 0.5ex}
+
+%\input{Chapters/intro.tex}
+%\input{Chapters/results.tex}
+
+ 
+\include{Chapters/intro}
+% ------------------------------------------------------------------------
+\include{Chapters/methods}
+% ------------------------------------------------------------------------
+\include{Chapters/results}
+% ------------------------------------------------------------------------
+\include{Chapters/discussion}
+% ------------------------------------------------------------------------
+%\include{Chapters/conclusion}
+% ------------------------------------------------------------------------
+%\include{Chapter/supplement}
+% ------------------------------------------------------------------------
+%\include{chapter7}
+% ------------------------------------------------------------------------
+%\include{chapter8}
+% ------------------------------------------------------------------------
+\renewcommand\baselinestretch{1.5}
+\addcontentsline{toc}{chapter}{Bibliography}
+%\bibliographystyle{acmtrans}
+%\citestyle{nature}
+%\bibpunct{(}{)}{,}{n}{}{;}
+%\bibliographystyle{plainnat}% You should chose one for your major. Look for bst styles on ctan, or use makebst.sty. This formats the bibliography
+%\bibliographystyle{asmems4}
+\bibliography{library}
+ 
+ 
+%\appendix
+
+%\chapter{First appendix chapter}
+%Oh, there can be an appendix. 
+%\include{appendixA}
+%\include{appendixB}
+%\include{appendixC}
+%\include{appendixD}
+
+%-----------------------------------------------------------------------
+\end{document}
+%-----------------------------------------------------------------------

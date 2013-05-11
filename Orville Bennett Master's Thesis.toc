@@ -1,0 +1,47 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Calcium Signaling}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Store-Operated Calcium Entry}{3}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}STIM1}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Orai3}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}\emph {Drosophila}{} S2 cells}{6}{section.1.4}
+\contentsline {section}{\numberline {1.5}Metallothionein}{8}{section.1.5}
+\contentsline {section}{\numberline {1.6}Chemical reagents used}{8}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}2-Aminoethoxydiphenyl Borate}{8}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Cyclopiazonic Acid}{9}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Ethylene glycol tetraacetic acid}{10}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Fura-2}{10}{subsection.1.6.4}
+\contentsline {subsubsection}{Fura-2-AM}{11}{section*.2}
+\contentsline {subsection}{\numberline {1.6.5}Probenecid}{12}{subsection.1.6.5}
+\contentsline {subsubsection}{The mode of action of Probenecid}{12}{section*.3}
+\contentsline {section}{\numberline {1.7}Specific Aims}{13}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Specific Aim \#1}{13}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Specific Aim \#2}{14}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Specific Aim \#3}{14}{subsection.1.7.3}
+\contentsline {section}{\numberline {1.8}Significance}{14}{section.1.8}
+\contentsline {chapter}{\numberline {2}Materials and Methods}{16}{chapter.2}
+\contentsline {section}{\numberline {2.1}Materials}{16}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Restriction enzymes}{17}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Primers}{17}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}\emph {Drosophila}{} resources}{18}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Methods}{20}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Maintenance of cell lines}{20}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Creation of \emph {Drosophila}{} expression constructs}{20}{subsection.2.2.2}
+\contentsline {subsubsection}{Molecular Cloning}{20}{section*.11}
+\contentsline {subsubsection}{Engineering \emph {Drosophila}{} vector contructs}{21}{section*.12}
+\contentsline {subsubsection}{Transformation of ligated DNA}{22}{section*.13}
+\contentsline {subsubsection}{Minipreparation of plasmid DNA}{22}{section*.14}
+\contentsline {subsubsection}{Maxipreparation of plasmid DNA}{22}{section*.15}
+\contentsline {subsection}{\numberline {2.2.3}Transfection of S2 cells}{23}{subsection.2.2.3}
+\contentsline {subsubsection}{Induction of transfected S2 cells with CuSO$_4$}{23}{section*.16}
+\contentsline {subsection}{\numberline {2.2.4}RT-PCR and cDNA synthesis}{23}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Ca$^{2+}$ imaging experiments}{24}{subsection.2.2.5}
+\contentsline {subsubsection}{Selection of data for analysis}{25}{section*.17}
+\contentsline {subsubsection}{Statistical analysis of imaging experiment data}{25}{section*.18}
+\contentsline {chapter}{\numberline {3}Results}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Creating inducible vectors}{26}{section.3.1}
+\contentsline {section}{\numberline {3.2}Demonstrating inducible expression}{31}{section.3.2}
+\contentsline {section}{\numberline {3.3}Effective measurement of Ca$^{2+}${} transients}{35}{section.3.3}
+\contentsline {chapter}{\numberline {4}Discussion}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusion}{50}{section.4.1}
+\contentsline {chapter}{Bibliography}{51}{section.4.1}
